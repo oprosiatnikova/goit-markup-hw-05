@@ -419,17 +419,21 @@
     </footer>
     <div class="backdrop is-open"></div>
     <div class="modal">
-        <button><svg class="cross" width="8" height="8">
-                <use href="./images/cross.svg"></use>
-            </svg></a>cross</button>
-        <p>Leave your contacts and we will call you back</p>
-        <form class="form" name="issue_report_form" autocomplete="off">
-            <label class="form-label">
-                Name
-                <input class="form-input" type="text" name="username" placeholder="" autofocus />
-            </label>
 
-            <label class="form-label">
+        <button type="button" class="modal-open"><svg width="8" height="8">
+                <use href="./images/icons.svg#icon-cross"></use>
+            </svg>
+        </button>
+        <p class="modal-okolo-media">Leave your contacts and we will call you back</p>
+        <div class="modal-form">
+            <form class="form" name="issue_report_form" autocomplete="off">
+                <label class="form-label">
+                    Name
+                    <input class="form-input" type="text" name="username" placeholder="" autofocus />
+                    <span class="icons-modal"><svg href="./images/icons.svg#icon-name"></svg></span>
+                </label>
+
+
                 <label class="form-label">
                     Phone
                     <input class="form-input" type="tel" name="" placeholder="" />
@@ -439,20 +443,34 @@
                     <input class="form-input" type="password" name="user pwd" placeholder="" />
                 </label>
 
+
                 <label class="form-label">
                     Comment
-                    <textarea class="form-input" name="description" placeholder="" rows="5"></textarea>
+                    <textarea class="form-input" name="user-coment" id="user-coment" placeholder="Enter text">
+                        </textarea>
                 </label>
 
 
-                <label> <input type="radio" name="text" value="red" checked />I accept the terms and conditions of the
-                    <a href="">Privacy Policy</a></label>
-            </label>
 
 
 
-            <button class="form-button press" type="submit">Send</button>
-        </form>
+                <label> <input type="radio" name="text" value="red" checked />
+                    <svg class="modal-check-icon" width="8" height="8">
+                        <use href="./images/icons.svg#con-check"></use>
+                    </svg>
+
+
+
+                    I accept the terms and conditions of the
+                    <a href="">Privacy Policy</a>
+                </label>
+
+
+
+
+                <button class="form-button press" type="submit">Send</button>
+            </form>
+        </div>
 
 
     </div>
