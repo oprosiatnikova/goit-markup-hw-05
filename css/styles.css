@@ -655,16 +655,17 @@ stroke-width: 1px;
 stroke: rgba(0, 0, 0, 0.1);
 }
 
-.modal-label-group {
+/* .modal-label-group {
 justify-content: flex-start;
 flex-direction: column;
 gap: 16px;
     margin-top: 72;
-}
-.modal-field {
+} */
+/* .modal-field {
 background: #fff;
 margin-bottom: 8px;
-}
+ display: flex;
+ } */
 
 .modal-label {
     display: block;
@@ -795,6 +796,9 @@ outline: transparent;
                         background-color: 250ms cubic-bezier: (0.4, 0, 0.2, 1);
                         background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
                         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+margin-top: 0 auto;
+margin-left: 0 auto;
+
 }
  .modal-check-text {
     font-weight: 400;
