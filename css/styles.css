@@ -657,13 +657,9 @@ li.app {
     height: 24px;
     border-radius: 50%;
     background-color: #e7e9fc;
-    /* border: 1px solid rgba(46, 47, 66, 0.4); */
-
-    border-radius: 100%;
     align-items: center;
     cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
     stroke-width: 1px;
     stroke: rgba(0, 0, 0, 0.1);
 }
@@ -691,9 +687,7 @@ li.app {
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
-    justify-content: center;
-
-    gap: 16px;
+    margin-bottom: 16px;
 }
 
 .form-input {
@@ -789,12 +783,20 @@ li.app {
     background-color: transparent;
     padding: 8px 16px;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
-    color: #8e8f99;
+    color: rgba(46, 47, 66, 0.4);
     outline: transparent;
     resize: none;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+.user-privacy-checkbox {
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 2px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: inline-flex;
+    fill: transparent;
+    align-items: center;
+    justify-content: center;
+}
 .form-input:focus {
     border-color: #4D5AE5;
 }
