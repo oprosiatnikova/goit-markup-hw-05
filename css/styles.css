@@ -909,5 +909,12 @@ height: 80px;
         height: 112px;
         
 }
+/* .container .footer-subscribe {
+  align-items: baseline;
+} */
 
-
+.container.footer-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
