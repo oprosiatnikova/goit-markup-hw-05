@@ -876,6 +876,7 @@ height: 80px;
 
     .form-subscribe {
         display: flex;
+        gap 24px;
        
     }
     .footer-button {
@@ -917,4 +918,11 @@ height: 80px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+.modal-input .footer {
+    width: 264px; 
+    height: 40px;
+    line-height: 2px; 
+    letter-spacing: 0.04em;
+    padding-left: 16px;
 }
