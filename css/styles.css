@@ -794,7 +794,7 @@ li.app {
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-span.user-privacy-checkbox {
+.user-privacy-checkbox span {
     display: inline-flex;
 }
 
