@@ -992,13 +992,18 @@ li.app {
     justify-content: center;
 }
 
-.modal-input .email {
+.modal-input.email {
     width: 264px;
     height: 40px;
-    line-height: 2px;
+    line-height: 2;
     letter-spacing: 0.04em;
     padding-left: 16px;
-
+    border: 1px solid #ffffff;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    color: #ffffff;
 }
-
+input[name="email"]::placeholder {
+    color: #ffffff;
+}
 
