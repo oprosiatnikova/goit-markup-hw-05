@@ -909,6 +909,7 @@ span.user-privacy-checkbox {
 .modal-check:checked + .modal-check-text span {
     border: none;
     fill: #F4F4FD;
+    background-color: #404bbf;
 }
 /*!* Стилі для input, коли він checked *!*/
 /*.modal-check:checked + .modal-check-text .user-privacy-checkbox {*/
