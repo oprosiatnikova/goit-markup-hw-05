@@ -1,4 +1,8 @@
 @import "{{ site.theme }}";
+:root {
+    --checked-bg-color: #404bbf;
+    --checked-fill-color: #F4F4FD;
+}
 /* Загальні стилі */
 body {
     font-family: 'Roboto', sans-serif;
@@ -789,8 +793,12 @@ li.app {
     resize: none;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.user-privacy-checkbox {
+
+span.user-privacy-checkbox {
     display: inline-flex;
+}
+
+.user-privacy-checkbox {
     width: 16px;
     height: 16px;
     border: 1px solid rgba(46, 47, 66, 0.4);
@@ -800,6 +808,7 @@ li.app {
     align-items: center;
     justify-content: center;
 }
+
 .form-input:focus {
     border-color: #4D5AE5;
 }
@@ -885,14 +894,14 @@ li.app {
 
 
 /* Стилі для input, коли він checked */
-input[type="checkbox"]:checked + label .user-privacy-checkbox {
-    background-color: #404bbf;
-    border: none;
+.modal-check:checked + .modal-check-text .user-privacy-checkbox {
+    background-color: var(--checked-bg-color); /* Задати фон */
+    border: none; /* Вимкнути стандартне оформлення */
 }
 
 /* Стилі для svg-іконки всередині span, коли input checked */
-input[type="checkbox"]:checked + label .user-privacy-checkbox svg {
-    fill:  #F4F4FD;
+.modal-check:checked + .modal-check-text .user-privacy-checkbox svg {
+    fill: var(--checked-fill-color); /* Задати колір іконки */
 }
 
 .policy {
@@ -1014,6 +1023,7 @@ input[type="checkbox"]:checked + label .user-privacy-checkbox svg {
     border-radius: 4px;
     color: #ffffff;
 }
+
 input[name="email"]::placeholder {
     color: #ffffff;
 }
